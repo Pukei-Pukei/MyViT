@@ -1,0 +1,13 @@
+Copyright 2023 Minsik Yoon
+
+PyTorch Image Models
+https://github.com/rwightman/pytorch-image-models.git
+Copyright 2019 Ross Wightman
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+modified by My Minsik Yoon to simplify code for code reviewing.
