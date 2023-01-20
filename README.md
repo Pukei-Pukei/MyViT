@@ -1,8 +1,7 @@
 # Introduction
-MyViT is simplified version of `timm/models/vision_transformer`  
+MyViT is simplified version of [`rwightman/pytorch-image-models/timm/models/vision_transformer`](https://github.com/rwightman/pytorch-image-models/blob/main/timm/models/vision_transformer.py)  
 
-This project aim to make easy to review code and the paper *<An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale>*
-
+This project aim to make easy to review code and the paper [*<An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale>*](https://arxiv.org/pdf/2010.11929.pdf)
 
 # Equations
 
@@ -26,7 +25,7 @@ N &= N' + 1 = \text{the Transformer’s sequence length}\\
 \mathbf{E}_{pos} &\in \mathbb{R}^{N \times D}\\
 \mathbf{x}_{class} &\in \mathbb{R}^{1 \times D}\\
 \\
-\mathbf{z}_{0} &= [\mathbf{x}_{class}\ ;\ \mathbf{x}_{p}\mathbf{E}] &\mathbf{z}_{0} &\in \mathbb{R}^{N \times D}\\
+\mathbf{z}_{0} &= [\mathbf{x}_{class}\ ;\ \mathbf{x}_{p}\mathbf{E}]~+~\mathbf{E}_{pos} &\mathbf{z}_{0} &\in \mathbb{R}^{N \times D}\\
 \\
 \mathbf{z'}_{l} &= \mathrm{MSA}(~\mathrm{LN}(\mathbf{z}_{l-1})~)~+~\mathbf{z}_{l-1} &\mathbf{z'}_{l} &\in \mathbb{R}^{N \times D}\\
 \mathbf{z}_{l} &= \mathrm{MLP}(~\mathrm{LN}(\mathbf{z'}_{l})~)~+~\mathbf{z'}_{l} &\mathbf{z}_{l} &\in \mathbb{R}^{N \times D}\\
